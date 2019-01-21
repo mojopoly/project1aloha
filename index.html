@@ -15,30 +15,34 @@
             <section class="tablet-view">
                 <div class="menu-icons">
                     <div class ="aloha-img"><img src="css/Files/images/aloha-logo.svg" height="40px" width="100px" alt="Aloha logo"></div>
-                    <ul class="nav-bar-tablet"> <li>ABOUT</li> <li>SHOP</li> <li>FEATURED</li> <li>UPDATES</li></ul>
+                    <ul class="nav-bar-tablet"> <li><a href="#about">ABOUT</a></li> <li><a href="#shop">SHOP</a></li> <li><a href="#featured">FEATURED</a></li> 
+                        <li><a href="#updates">UPDATES</a></li></ul>
                     <div class= "cart-icon"><img src="css/Files/images/cart-icon.svg" height="40px" width="40px" alt="Shopping-cart-icon"></div>
                 </div>  
                 <div class= "hor"></div>
-                <ul class="nav-bar-mobile"> <li>ABOUT</li> <li>SHOP</li> <li>FEATURED</li> <li>UPDATES</li></ul>
+                <ul class="nav-bar-mobile"> <li><a href="#about">ABOUT</a></li> <li><a href="#shop">SHOP</a></li> <li><a href="#featured">FEATURED</a></li> 
+                    <li><a href="#updates">UPDATES</a></li></ul>
 
             </section>
             
             <section class= "hero">
                 <div class= "hero-image"></div>
-                <h1>NEW COLLECTION</h1>
-                <div class="hero-mid-text"> 
-                    <h2>Spring/Summer </h2>
-                    <h3 >2019</h3>
+                <div class="hero-mid-text-all">
+                    <h1>NEW COLLECTION</h1>
+                    <div class="hero-mid-text"> 
+                        <h2>Spring/Summer </h2>
+                        <h3 >2019</h3>
+                    </div>
                 </div>
             </section>
             <section class= "hero-below-container">
-                <h1 class="hero-below"> Hand-Crafted</h1> 
+                <h1 class="hero-below", id="about"> Hand-Crafted</h1> 
                 <h2 class ="hero-below">Styles</h2>
             </section>
             <div class="hero-below-p"> <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our 
                         current selection of products or sign-up for updates below.</p></div>
             
-            <section class="grid-container-top">
+            <section class="grid-container-top", id="shop">
                     <div class="top-level-img"><img src="css/Files/images/mens-category.jpg" alt="mens-category">
                         <h1>MEN'S</h1>
                     </div>
@@ -60,7 +64,7 @@
                     <h1>Women's</h1>
                 </div> 
             </section>
-        <section class= "mostLovedProds">
+        <section class= "mostLovedProds", id="featured">
                 <h1 class="mostLoved"> Most-Loved</h1> 
                 <h2 class ="products">Products</h2>
         </section>
@@ -92,7 +96,7 @@
                 </div>                      
  
         </section>
-        <section class="subscribe-all">
+        <section class="subscribe-all", id="updates">
         <section class="subscribe">
             <h1 class="signup"> Sign-up for   </h1> 
             <h2 class ="updates">  Updates</h2>
@@ -101,10 +105,10 @@
             from our blog. Unsubscribe at any time.
         </p>
         <div class="subscription-form">
-            <form>
+            <form method="post" action="#">
                 <div class="input-group">
-                <input class="input-group-field" type="email" placeholder="Your Email" required>
-                <button class="button">Subscribe</button>
+                <input class="input-group-field" type='text' name="ename" id='txtEmail' placeholder='Your Email Address' required/>
+                <input class="subs-button" type='submit' id='btnValidate' name="submit" Value='Submit' />
                 </div>
             </form>
     
@@ -115,10 +119,8 @@
             <section class="address">
                 <h5> 2016 Aloha Apparel Co. <br> Powered by HTML and CSS <br>604-604-6040. <u>info@alohaapparel.com</u> <br><br>
                 </h5>
-            <!-- <section class="address-bottom"> -->
                 <p style="color: grey">1490 W Broadway <br> Vancouver, BC, Canada</p>
-            <!-- </section> -->
-            </section>
+           </section>
             <section class="icons">
                     <ul>
                     <li class="facebook"><i class="fab fa-facebook-f"></i> <p>Facebook</p></li>
@@ -133,6 +135,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/main.js"></script>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </body>
