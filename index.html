@@ -7,30 +7,29 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
             <link href="css/style.css" type="text/css" rel="stylesheet">
+            <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
    
     </head>
     <body>
         <section class= all-body>
-            <section class='top-bar'>
-                <article class="menu">
-                    <img src="css/Files/images/aloha-logo.svg" alt="Aloha logo">
-                </article>
+            <section class="tablet-view">
+                <div class="menu-icons">
+                    <div class ="aloha-img"><img src="css/Files/images/aloha-logo.svg" height="40px" width="100px" alt="Aloha logo"></div>
+                    <ul class="nav-bar-tablet"> <li>ABOUT</li> <li>SHOP</li> <li>FEATURED</li> <li>UPDATES</li></ul>
+                    <div class= "cart-icon"><img src="css/Files/images/cart-icon.svg" height="40px" width="40px" alt="Shopping-cart-icon"></div>
+                </div>  
+                <div class= "hor"></div>
+                <ul class="nav-bar-mobile"> <li>ABOUT</li> <li>SHOP</li> <li>FEATURED</li> <li>UPDATES</li></ul>
 
-                <article class="menu">                     
-                        <img src="css/Files/images/cart-icon.svg" alt="Shopping-cart-icon">
-                </article>
             </section>
-                <article class= "hor">
-
-                </article>
-                <article class="nav-bar"> 
-                       <ul> <li>ABOUT</li> <li>SHOP</li> <li>FEATURED</li> <li>UPDATES</li></ul>
-                </article>
+            
             <section class= "hero">
                 <div class= "hero-image"></div>
                 <h1>NEW COLLECTION</h1>
-                <h2>Spring/Summer </h2>
-                <h2 >2016</h2>
+                <div class="hero-mid-text"> 
+                    <h2>Spring/Summer </h2>
+                    <h3 >2016</h3>
+                </div>
             </section>
             <section class= "hero-below-container">
                 <h1 class="hero-below"> Hand-Crafted</h1> 
@@ -38,47 +37,106 @@
             </section>
             <div class="hero-below-p"> <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our 
                         current selection of products or sign-up for updates below.</p></div>
+            
             <section class="grid-container-top">
-                    <div>MEN's</div>
-            </section>
-            <section class="grid-container">
-                    <div class="trends">TRENDS</div>
-                    <div class="glasses">GLASSES</div>  
-                    <div class="sale">SALE</div>
-                    <div class="bags">BAGS</div>
+                    <div class="top-level-img"><img src="css/Files/images/mens-category.jpg" alt="mens-category">
+                        <h1>MEN'S</h1>
+                    </div>
+                    <div class="top-level-img"><img src="css/Files/images/trends-category.jpg"  alt="trends-category">
+                        <h1>TRENDS</h1>
+                    </div>
+                    <div class="top-level-img"> <img src="css/Files/images/glasses-category.jpg"  alt="glasses-category">
+                        <h1>GLASSES</h1>
+                    </div> 
             </section>
             <section class="grid-container-bottom">
-                    <div>WOMEN'S</div>  
+                <div class="bottom-level-img"><img src="css/Files/images/sale-category.jpg" alt="sale-category">
+                    <h1>Sale</h1>
+                </div>
+                <div class="bottom-level-img"><img src="css/Files/images/bags-category.jpg"  alt="bags-category">
+                    <h1>Bags</h1>
+                </div>
+                <div class="bottom-level-img"> <img src="css/Files/images/womens-category.jpg"  alt="womens-category">
+                    <h1>Women's</h1>
+                </div> 
             </section>
         <section class= "mostLovedProds">
                 <h1 class="mostLoved"> Most-Loved</h1> 
                 <h2 class ="products">Products</h2>
         </section>
         <section class="mostLovedProds-below">
-                <div class= "loved-image"> <img src="css/Files/images/checked-stretch-dress.jpg" alt="checked-stretch-dress"></div>
-                <h4>DRESSES</h4>
-                <h1>Checked Stretch Dress</h1>
-                <h5>$129.00</h5>
+                <div class= "carousel-imgs"> 
+                    <img src="css/Files/images/checked-stretch-dress.jpg" alt="checked-stretch-dress">
+                    <h4>DRESSES</h4>
+                    <h1>Checked Stretch Dress</h1>
+                    <h5>$129.00</h5>
+                </div>
+                
+                <div class= "carousel-imgs"> 
+                        <img src="css/Files/images/blue-hipster-backpack.jpg" alt="checked-stretch-dress">
+                        <h4>BAGS</h4>
+                        <h1>Blue Hipster Backpack</h1>
+                        <h5>$69.00</h5>
+                </div>  
+                <div class= "carousel-imgs"> 
+                        <img src="css/Files/images/demin-overall-shorts.jpg" alt="demin-overall-shorts">
+                        <h4>DEMIN</h4>
+                        <h1>Demin Overall Shorts</h1>
+                        <h5>$89.00</h5>
+                </div>  
+                <div class= "carousel-imgs"> 
+                        <img src="css/Files/images/pink-dotted-dress.jpg" alt="pink-dotted-dress">
+                        <h4>DRESSES</h4>
+                        <h1>Pink Dotted Dress</h1>
+                        <h5>$99.00</h5>
+                </div>                      
+ 
+        </section>
+        <section class="subscribe-all">
+        <section class="subscribe">
+            <h1 class="signup"> Sign-up for   </h1> 
+            <h2 class ="updates">  Updates</h2>
+        </section>
+        <p class="subscribe-p">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips
+            from our blog. Unsubscribe at any time.
+        </p>
+        <div class="subscription-form">
+            <form>
+                <div class="input-group">
+                <input class="input-group-field" type="email" placeholder="Your Email" required>
+                <button class="button">Subscribe</button>
+                </div>
+            </form>
+    
+        </div>
+          
         </section>
         <section class="footer-container">
-
-            <section class="item">
-                <p> 2016 Aloha Apparel Co. <br> Powered by HTML and CSS <br><br> 604-604-6040. <u>info@alohaapparel.com</u> <br><br>
-                </p>
-            <section class="item">
-                    <p style="color: grey">1490 W Broadway <br> Vancouver, BC, Canada</p>
+            <section class="address">
+                <h5> 2016 Aloha Apparel Co. <br> Powered by HTML and CSS <br>604-604-6040. <u>info@alohaapparel.com</u> <br><br>
+                </h5>
+            <!-- <section class="address-bottom"> -->
+                <p style="color: grey">1490 W Broadway <br> Vancouver, BC, Canada</p>
+            <!-- </section> -->
             </section>
-            <ul class="item">
-                    <li class="icon"><span> <i class="fab fa-facebook-f"></i> </span>
-                    <li class="icon"><span> <i class="fab fa-twitter"></i></span>
-                    <li class="icon"><span> <i class="fab fa-instagram"></i> </span>
-                    <li class="icon"><span> <i class="fab fa-pinterest"></i> </span>
-                    <li class="icon"><span> <i class="fab fa-google-plus-g"></i></span>
-             </ul>
-
+            <section class="icons">
+                    <ul>
+                    <li class="facebook"><i class="fab fa-facebook-f"></i> <p>Facebook</p></li>
+                    <li class="twitter"><i class="fab fa-twitter"></i><p>Twitter</p></li>
+                    <li class="insta"><i class="fab fa-instagram"></i><p>Instagram</p></li>
+                    <li class="pinterest"><i class="fab fa-pinterest"></i><p>Pinterest</p></li>
+                    <li class="gplus"><i class="fab fa-google-plus-g"></i><p>Google+</p></li>
+                    </ul>
+            </section>
         </section>
     </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </body>
-    
+
+
 </html>
 
