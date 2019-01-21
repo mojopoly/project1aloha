@@ -114,7 +114,6 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 360px;
     padding: 1% 1%;
     font-family: 'Playfair Display';
     font-size: 16px;
@@ -143,14 +142,12 @@ body {
 }
 
 .nav-bar-mobile{
-    /* background-color: orange; */
     color: #e2574c;
-    width: 360px;
+    width: 25em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 1% 0%;
-    /* margin: 0%; */
 }
 .nav-bar-tablet{
     display: none;
@@ -267,7 +264,7 @@ body {
 }
 
 .top-level-img:nth-child(2) h1{
-        position: absolute;
+      position: absolute;
       text-transform: uppercase;
       color: #FFF;
       top: 40%;
@@ -321,7 +318,7 @@ body {
 }
 
 .bottom-level-img:nth-child(1) h1{
-        position: absolute;
+      position: absolute;
       text-transform: uppercase;
       color: #FFF;
       top: 40%;
@@ -407,7 +404,10 @@ body {
 
 .carousel-imgs {
     width: 100%;
-    padding: 1rem;
+    /* padding: 1rem; */
+}
+.carousel-imgs img{
+    width: 100%;
 }
 
 .carousel-imgs h4{
@@ -435,7 +435,8 @@ body {
     margin-bottom: 1%;
 }
 .flickity-page-dots{
-    top: 90%;
+    top: 95%;
+    padding: 10% 0;
 }
 
 .subscribe{
@@ -529,9 +530,7 @@ body {
     .hor:after {
         width: 0%;
     }
-    .all-body{
-        width: 600px;
-    }
+
     .hero-below-container{
         padding: 2% 0;
     }
@@ -543,7 +542,7 @@ body {
     }
     .nav-bar-tablet{
         color: #e2574c;
-        width: 300px;
+        width: 35em;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -593,10 +592,8 @@ body {
         padding: 1rem;
         height: auto;
     }
-    .mostLovedProds-below{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+    .carousel-imgs img{
+        width: 95%;
     }
     .subscribe{
         width: 100%;
@@ -677,18 +674,15 @@ body {
 }
    
 @media screen and (min-width: 1240px) {
-        .all-body{
-        width: 1240px;
-        }
         .nav-bar-tablet{
-            width: 600px;
+            width: 30em;
         }
         .hero{
              padding-top: 10%; 
              background-size: 15em 35em, cover; 
              height: 36em;
          }
-         .hero h1{
+        .hero h1{
             font-size: 1.5em;
         }
         .hero-mid-text{
@@ -789,7 +783,10 @@ body {
         }
         .carousel-imgs {
             width: 25%;
-            padding: 1rem;
+            /* padding: 1rem; */
+        }
+        .carousel-imgs img{
+            width: 90%;
         }
         .subscribe-all{
             padding: 3% 0;
