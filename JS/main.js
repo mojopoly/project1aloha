@@ -36,9 +36,23 @@ $(function() {
     $('.cart-number').html(function(i, val) { return val*1+1 });
   });
 
+  $('#addToCart2').on('click' , function(event){
+    event.preventDefault()
+    $('.cart-number').html(function(i, val) { return val*1+1 });
+  });
   });
 
-
+  
+  window.onscroll = function() {myFunction()};
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
   //no need to setup width for mobile-first
   //commit at least 5 times
   //include slider as plugin in your Read more

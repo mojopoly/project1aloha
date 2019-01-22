@@ -93,6 +93,9 @@ table {
     font-weight: normal;
     font-style: normal;
 }
+
+/* Elements */
+
 html {
     color: #646464;
     font-size: 14px;
@@ -123,6 +126,28 @@ body {
     max-width: 100%;
     height: auto;
 }
+
+/* MENU */
+
+.menu-icons {
+    padding: 10px 16px;
+    background: whitesmoke;
+    color: #f1f1f1;
+    z-index: 10;
+  }
+  
+.content {
+    padding: 16px;
+  }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+.sticky + .content {
+    padding-top: 102px;
+  }
 .cart-icon{
     position: relative;
 }
@@ -132,7 +157,6 @@ body {
     left: 70%;
     border-radius: 50%;
     behavior: url(PIE.htc);
-    /* remove if you don't care about IE8 */
     width: 60%;
     height: 50%;
     padding: 1%;
@@ -180,6 +204,8 @@ body {
     padding: 0% 3%;
 }
 
+/* HERO BANNER */
+
 .hero{
    background: url(Files/images/banner-girl.png) bottom no-repeat, url(Files/images/flower-bkgd.jpg) bottom no-repeat fixed; 
     padding-top: 40%; 
@@ -210,6 +236,8 @@ body {
     font-size: 2em;
 }
 
+/* SHOP */
+
 .hero-below-container{
     display: flex;
     flex-flow: row nowrap;
@@ -238,6 +266,8 @@ body {
     text-align: center;
     padding: 5% 1%;
 }
+
+/* PHOTO GRID */
 
 .grid-container-top {
     display: flex;
@@ -392,6 +422,8 @@ body {
       font-size: 2em;
 }
 
+/* FEATURED PRODUCTS */
+
 .mostLovedProds{
     display: flex;
     flex-flow: row nowrap;
@@ -450,15 +482,18 @@ body {
     top: 95%;
     cursor:pointer;
 }
-    .add-to-cart-button:hover {
+.add-to-cart-button:hover {
         background-color:#adadad;
         border:2px solid #474242
-    }
+}
 
 .flickity-page-dots{
     top: 97%;
     padding: 1% 0;
 }
+
+/* SUBSCRIPTION SECTION */
+
 .subscribe-all{
     background: url(Files/images/wave-bkgd.jpg) no-repeat;
     background-size: cover;
@@ -519,6 +554,9 @@ body {
     background-color:#adadad;
     border:2px solid #474242
     }
+
+/* FOOTER */
+
 .footer-container{
     background-color: black;
     color:white;
@@ -557,6 +595,9 @@ body {
 .gplus p{
     display: none;
 }
+
+/* RESPONSIVE BREAKPOINT 1: 600 PIXELS */
+
 @media screen and (min-width: 600px) {
     .all-body{
         font-size: 1.2em;
@@ -729,6 +770,8 @@ body {
     }
 }
    
+/* RESPONSIVE BREAKPOINT 2: 1240 PIXELS */
+
 @media screen and (min-width: 1240px) {
         .nav-bar-tablet{
             width: 30em;
