@@ -93,7 +93,7 @@ table {
     font-weight: normal;
     font-style: normal;
 }
-  html {
+html {
     color: #646464;
     font-size: 14px;
     box-sizing: border-box;
@@ -109,7 +109,6 @@ body {
     justify-content: center;
     line-height: 1.5;
     font-family: 'Raleway Light';
-
   }
 
 .all-body{
@@ -123,6 +122,23 @@ body {
 .img{
     max-width: 100%;
     height: auto;
+}
+.cart-icon{
+    position: relative;
+}
+.cart-number{
+    position: absolute;
+    top:1%;
+    left: 70%;
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    /* remove if you don't care about IE8 */
+    width: 60%;
+    height: 50%;
+    padding: 1%;
+    text-align: center;
+    background-color: red;
+    color: white;
 }
 .tablet-view{
     width: 100%;
@@ -211,7 +227,7 @@ body {
 .hero-below-container h1{
     font-style: italic;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     width: 80%;
 }
 
@@ -380,7 +396,7 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    padding: 5% 1%;
+    padding: 1% 1%;
     font-size: 2em;
     color: black;
     width: 100%;
@@ -423,7 +439,26 @@ body {
     font-size: .75em;
     padding: 1% 0;
 }
+.add-to-cart-button {
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    padding: 1% 5%;
+    position: absolute;
+    left: 35%;
+    top: 95%;
+    cursor:pointer;
+}
+    .add-to-cart-button:hover {
+        background-color:#adadad;
+        border:2px solid #474242
+    }
 
+.flickity-page-dots{
+    top: 97%;
+    padding: 1% 0;
+}
 .subscribe-all{
     background: url(Files/images/wave-bkgd.jpg) no-repeat;
     background-size: cover;
@@ -431,11 +466,6 @@ body {
     width: auto;
     margin-bottom: 1%;
 }
-.flickity-page-dots{
-    top: 96%;
-    padding: 10% 0;
-}
-
 .subscribe{
     display: flex;
     flex-flow: row nowrap;
@@ -826,6 +856,7 @@ body {
         .subscribe{
             display: flex;
             justify-content: center;
+            width: 100%;
         }
         .subscribe h1{
             width: 11%;

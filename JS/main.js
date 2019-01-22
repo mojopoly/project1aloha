@@ -20,7 +20,7 @@ $(function() {
       wrapAround: true
     });
 
-      $('#btnValidate').click(function(e) {
+  $('#btnValidate').click(function(e) {
       var sEmail = $('#txtEmail').val();
       var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
       if (filter.test(sEmail)) {
@@ -30,8 +30,13 @@ $(function() {
         alert('Invalid Email Address');
         e.preventDefault();
       }
-      });
-      });
+  });
+  $('#addToCart').on('click' , function(event){
+    event.preventDefault()
+    $('.cart-number').html(function(i, val) { return val*1+1 });
+  });
+
+  });
 
 
   //no need to setup width for mobile-first
@@ -43,13 +48,4 @@ $(function() {
   //make code more readable, add sections
   //go thru all generic reqs
 
-    // $('.subs-button').on('click', function(){
-    //   //if email address is valid, then alert thanks for subscribing
-    //     var $inputEmail = /^[w-.+]+@[a-zA-Z0-9.-]+.[a-zA-z0-9]{2,4}$/;
-    //       if ($inputEmail.test(event)){
-    //         alert ("Thanks for subscribing");
-    //       } else{
-    //         alert("Please input a valid email address");
-    //       }
-    //   //if not, alert to input a valid email address
-    // })
+    
