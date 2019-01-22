@@ -31,15 +31,12 @@ $(function() {
         e.preventDefault();
       }
   });
-  $('#addToCart').on('click' , function(event){
+  $('.add-to-cart-button').on('click' , function(event){
     event.preventDefault()
     $('.cart-number').html(function(i, val) { return val*1+1 });
   });
 
-  $('#addToCart2').on('click' , function(event){
-    event.preventDefault()
-    $('.cart-number').html(function(i, val) { return val*1+1 });
-  });
+
   });
 
   
